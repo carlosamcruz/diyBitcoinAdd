@@ -2,16 +2,22 @@
 
 Neste repositorio apresento o passo-a-passo de como criar um endereço Bitcoin (Comprimido e Não-Comprimido) a partir da chave privada:
 
-PVT Key: 
+1 - Obter uma Chave Privada Hexadecimal - PVT Key:
+
 7607bc03c8d53fa69c8286caed89d1b90126a487deb7366c712fd39e50da6127
 
-PVT Key BI: 
+2 - Tranformar a PVT Key para um Big Integer:
+
 53386581692622102880125369883157555845401173336327691266960711372295169007911
 
+3 - Encontar um Ponto (X, Y) na curva eliptica secp256k1:
+
 Pub Key X BI: 
+
 108872493186048615242353509040895830033790510702357293650574380721882989405273
 
 Pub Key Y BI: 
+
 88455113148715356516474221992359857574483361477262285521261132844528933895450
 
 Pub Key Uncomp: 
@@ -19,6 +25,8 @@ Pub Key Uncomp:
 
 Pub Key Comp: 
 02f0b3a5bda9e58e0e5d64162424def451b6cc86434b195c92ed1c38d1f3452459
+
+4 - Obter o Hash da Chave Publica no Formato SEC:
 
 SHA256(Pub Key Uncomp): 
 e59fd87b20f114a657357d943d1b8582beb8dd3ace09858569a04009711de4b5
